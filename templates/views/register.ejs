@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="loginform">
+            <form method="POST" action="/registeruser" id="registerform">
+                <h1>Register</h1>
+                <input type="text" placeholder="Email" required id="email"><br>
+                <input type="text" placeholder="Password" required id="password"><br>
+                <input type="password" placeholder="Confirm Password" required id="confirmpassword"><br>
+                <p id="message"></p>
+                <button type="submit">Register</button><br>
+                <a href="/"><p>Back to Login</p></a>
+            </form>
+        </div>
+        <footer>
+            <%- include('../partials/footer');%>
+        </footer>
+        <script src="/js/register.js"></script>
+    </body>
+</html>

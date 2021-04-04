@@ -8,7 +8,11 @@
     </head>
     <body>
         <div class="main-content">
-            {{>header}}
+            <!-- {{>header}} -->
+            <button id="logout">logout</button>
+            <header>
+                <%- include('../partials/header');%>
+            </header>
             <p>Use this site to get your weather</p>
             <form>
                 <input placeholder="Location">
@@ -18,7 +22,10 @@
             <p id="message-2"></p>
             <canvas id="chart" width="400" height="400"></canvas>
         </div>
-        {{>footer}}
+        <!-- {{>footer}} -->
+        <footer>
+            <%- include('../partials/footer');%>
+        </footer>
 
         <script src="/js/control.js"></script>
     </body>

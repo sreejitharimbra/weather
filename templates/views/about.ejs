@@ -7,9 +7,15 @@
     </head>
     <body>
         <div class="main-content">
-            {{>header}}.
+            <!-- {{>header}} -->
+            <header>
+                <%- include('../partials/header');%>
+            </header>
             <p>This site was created by Sreejith arimbra. It uses data from mapbox.com and weatherstack.com</p>
         </div>
-        {{>footer}}
+        <!-- {{>footer}} -->
+        <footer>
+            <%- include('../partials/footer');%>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="loginform">
+            <form method="GET" action="/loginuser" id="loginform">
+                <h1>Login</h1>
+                <input type="text" placeholder="Email" required id="email"><br>
+                <input type="password" placeholder="Password" required id="password"><br>
+                <p id="message"></p>
+                <button id="loginbtn">Login</button>
+                <a href="/register"><p>New to weather? Register here.</p></a>
+            </form>
+        </div>
+        <footer>
+            <%- include('../partials/footer');%>
+        </footer>
+        <script src="/js/login.js"></script>
+    </body>
+</html>

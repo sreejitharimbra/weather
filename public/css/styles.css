@@ -55,3 +55,25 @@ button {
     color: white;
     padding: 8px;
 }
+
+.loginform {
+    width: 300px;
+}
+
+.loginform input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginform button a {
+    color: white;
+}
+
+.loginform a {
+    text-decoration: none;
+    color: blue;
+}
+
+#message {
+    color: red;
+}

@@ -7,9 +7,14 @@
     </head>
     <body>
         <div class="main-content">
-            {{>header}}
+            <header>
+                <% include('../partials/header') %>
+            </header>
             <p>{{errorMessage}}</p>
         </div>
-        {{>footer}}
+        <!-- {{>footer}} -->
+        <footer>
+            <%- include('../partials/footer');%>
+        </footer>
     </body>
 </html>
