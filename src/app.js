@@ -103,7 +103,6 @@ app.get('/historyfetch', (req, res) => {
         if (err) {
             res.send({error: 'something went wrong'})
         } else {
-            console.log(decoded)
             var connection = mysql.createConnection({
                 host     : 'localhost',
                 user     : 'root',
@@ -118,10 +117,6 @@ app.get('/historyfetch', (req, res) => {
                       res.send({error: 'something went wrong'})
                   } else {
                       res.send({data: results})
-                      res.render('history', {
-                        title: 'History',
-                        name: 'Sreejith arimbra'
-                      })
                   }
               })
         }

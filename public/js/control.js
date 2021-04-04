@@ -17,6 +17,7 @@ var ctx = document.getElementById('chart');
 logoutbtn.addEventListener('click', () => {
     localStorage.removeItem('token')
     localStorage.removeItem('email')
+    history.go(-(history.length))
     window.location.replace('/')
     console.log('loggedout')
 

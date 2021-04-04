@@ -77,3 +77,11 @@ button {
 #message {
     color: red;
 }
+
+td {
+    width: 20%;
+}
+
+th {
+    width: 20%;
+}
